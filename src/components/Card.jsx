@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+
+import { useState, useEffect } from 'react';
 import mockData from './CardData';
 import { Link } from 'react-router-dom';
 
@@ -32,7 +33,7 @@ const Card = () => {
       <div className="section2">
         <div className="container flex flex-wrap  justify-center mx-auto">
           {categories.map(category => (
-            <div key={category.id} className="items flex cursor-wait flex-col justify-center items-center m-10 w-48 h-76 bg-white mt-4 mx-12">
+            <div key={category.id} className="items flex flex-col justify-center items-center m-10 w-48 h-76 bg-white mt-4 mx-12">
               <div className="img img2 overflow-hidden">
                 <img src={category.image} className='w-full h-full' alt={category.name} />
                 <div className="flex flex-col items-center justify-center text-white relative bottom-28 h-20 w-40 m-4 bg-orange-500 ">

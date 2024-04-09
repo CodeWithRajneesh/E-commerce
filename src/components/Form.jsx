@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 // import { useHistory } from 'react-router-dom';
 
 const Form = () => {
@@ -38,7 +38,7 @@ const Form = () => {
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email address</label>
           <input type="email" name="email" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" id="email" placeholder="Enter email" value={formData.email} onChange={onChange} aria-describedby="emailHelp" />
-          <div id="emailHelp" className="mt-1 text-sm text-gray-500">We'll never share your email with anyone else.</div>
+          <div id="emailHelp" className="mt-1 text-sm text-gray-500">We never share your email with anyone else.</div>
         </div>
         <div>
           <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>

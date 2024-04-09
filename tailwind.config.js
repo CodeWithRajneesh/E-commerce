@@ -9,10 +9,16 @@ export default {
     extend: {
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
+      screens:{
+        'sm':'510px',
+        'lg':'1050px'
+      }
     },
+   
   },
   plugins: [
     // ...
+    // eslint-disable-next-line no-undef
     require('flowbite/plugin'),
   ],
 }
